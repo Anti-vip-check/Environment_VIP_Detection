@@ -23,7 +23,16 @@ Install the target apk and run
 ### steps3
 Enter adb mode and view kernel logs
 
-command: dmesg -C |grep pattern(supply:"root path","checking proc files:","EmulatorDetect")
+command: dmesg -C |grep pattern(supply:"root path","checking proc files:","EmulatorDetect","/system/build.prop")
+
+
+[ 3346.588349] Process accessing root path: /system/xbin/su, pid: 14746, tgid: 891, comm: <unknown>, user_lr: 0x765be464a8, user_fp: 0x7ff23a36c0
+[ 3347.913793] Process checking root path: /data/local/xbin/su, pid: 14772, tgid: 891, comm: <unknown>, user_lr: 0x75fd5c9d8c, user_fp: 0x75fbcd9d10
+[ 3347.913838] Process checking root path: /system/bin/su, pid: 14772, tgid: 891, comm: <unknown>, user_lr: 0x75fd5c9d8c, user_fp: 0x75fbcd9d10
+[ 3347.913892] Process checking root path: /system/sbin/su, pid: 14772, tgid: 891, comm: <unknown>, user_lr: 0x75fd5c9d8c, user_fp: 0x75fbcd9d10
+[ 3347.913912] Process checking root path: /system/bin/failsafe/su, pid: 14772, tgid: 891, comm: <unknown>, user_lr: 0x75fd5c9d8c, user_fp: 0x75fbcd9d10
+[ 3347.913927] Process checking root path: /system/sd/xbin/su, pid: 14772, tgid: 891, comm: <unknown>, user_lr: 0x75fd5c9d8c, user_fp: 0x75fbcd9d10
+[ 3347.913942] Process checking root path: /system/xbin/su, pid: 14772, tgid: 891, comm: <unknown>, user_lr: 0x75fd5c9d8c, user_fp: 0x75fbcd9d10
 
 [  711.190418] Process checking root path: /system/build.prop, pid: 6096, tgid: 891, comm: <unknown>, user_lr: 0x76e6712e54, user_fp: 0x75f0c97990
 [  711.191175] Process checking root path: /system/build.prop, pid: 6096, tgid: 891, comm: <unknown>, user_lr: 0x76e6712e54, user_fp: 0x75f0c97990
