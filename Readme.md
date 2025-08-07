@@ -8,7 +8,7 @@ kernel version：4.14.170-g5513138224ab-ab6570431
 
 System Oparation: Android 10(QQ3A.200805.001)
 
-kernel moule:environment-detection.kpm.kpm
+kernel moule:environment-detection.kpm
 
 
 
