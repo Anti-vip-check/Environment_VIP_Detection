@@ -8,13 +8,11 @@ kernel version：4.14.170-g5513138224ab-ab6570431
 
 System Oparation: Android 10(QQ3A.200805.001)
 
-kernel moule:frida-hide.kpm
+kernel moule:environment-detection.kpm.kpm
 
 
 
 ## test case
-com.migu.book.zhongxin  238B9B16399BBCEC704A3B2EFB2C27BFAD6505B1DC2E4310812738CEC17515BA.apk
-
 
 ### steps1 
 push the module to android device ad enable the module in Apatch framework(https://github.com/bmax121/APatch)
